@@ -1,0 +1,9 @@
+<!-- Creator: Joseph G Mbugua -->
+<!-- Github: https://github.com/jkibasui -->
+<svg id="kenyan_map" data-name="Counties in Kenya" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+    style="width: 100%; height: 100%">
+    <path *ngFor="let coordinate of coordinates;let i = index" [attr.id]="coordinate.id"
+        [attr.data-name]="coordinate.name" [attr.d]="coordinate.d" [attr.transform]="coordinate.transform"
+        [attr.fill]="fillCountyColor" [attr.stroke]="strokeColor" (click)="onkenyaMapClick(coordinate)">
+    </path>
+</svg>
