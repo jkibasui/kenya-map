@@ -1,27 +1,38 @@
-# KenyaMap
+# Angular SVG US Map
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
+This package is used to generate US SVG Map and also giving ability to set callback function and some parameters to change fill & stroke color.
 
-## Development server
+![kenyaMap](demo.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to install
 
-## Code scaffolding
+<pre>npm install kenya-map</pre>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuration
 
-## Build
+app.module.ts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<pre>import { kenyaMapModule } from 'kenya-map';</pre>
 
-## Running unit tests
+You need to add this module in @NgModule(Imports). That's it.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Accessing Component
 
-## Running end-to-end tests
+<pre>&lt;kenya-map&gt;&lt;/kenya-map&gt;</pre>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## API Reference
 
-## Further help
+### Inputs
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+|||
+|-|-|
+| `fillColor`      | Type: `string` Optional. Will change color of county name text. For Example: `fillColor="#C0C0C0"`  (Not enabled for now)      |
+| `fillCountyColor` | Type: `string` Optional. Will change background color of county area. For Example: `fillCountyColor="#C0C0C0"` |
+| `strokeColor`    | Type: `string` Optional. Will change border color of county area. For Example: `strokeColor="#C0C0C0"`     |
+
+### Output
+|||
+|-|-|
+| `onMapClick` | Will be emitted when county area has been clicked. It returns `county id and name` { "county": { countyID, countyName } }. (onMapClick) event. |
+
+Moreover, you can apply your own css to beautify this component.
