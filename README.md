@@ -2,8 +2,8 @@
 
 This package is used to generate an SVG Map of Kenya and also giving ability to set callback function and some parameters to change fill & stroke color and also custom fields for display of data
 
+![kenyaMap](demo2.png)
 ![kenyaMap](demo.png)
-
 ## How to install
 
 <pre>npm install kenya-map</pre>
