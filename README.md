@@ -1,6 +1,6 @@
 # Angular SVG US Map
 
-This package is used to generate US SVG Map and also giving ability to set callback function and some parameters to change fill & stroke color.
+This package is used to generate an SVG Map of Kenya and also giving ability to set callback function and some parameters to change fill & stroke color and also custom fields for display of data
 
 ![kenyaMap](demo.png)
 
